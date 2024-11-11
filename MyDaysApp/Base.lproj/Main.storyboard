@@ -24,6 +24,9 @@
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="I0v-1W-3Si">
                                 <rect key="frame" x="55" y="264" width="320" height="216"/>
+                                <connections>
+                                    <action selector="datePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="hCa-FO-42Y"/>
+                                </connections>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gh-pP-IEm">
                                 <rect key="frame" x="156" y="502" width="118" height="35"/>
@@ -37,6 +40,9 @@
                                 <state key="normal" title="Рассчитать">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="resultButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="s77-vu-wvU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ты наслаждаешься жизнью уже ... дней" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYj-qY-wrQ">
                                 <rect key="frame" x="63" y="557" width="303" height="40.666666666666629"/>
@@ -67,6 +73,10 @@
                             <constraint firstItem="iYj-qY-wrQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="wVa-H6-N8t"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="iYj-qY-wrQ" id="9dR-VF-FPE"/>
+                        <outlet property="resultButton" destination="1gh-pP-IEm" id="gI6-Mg-Izg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
